@@ -1,5 +1,6 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { addToStoreReadList } from '../../utility/addToDB';
 
 const BookDetails = () => {
 
@@ -15,8 +16,8 @@ const BookDetails = () => {
         
     }
 
-    const handleMarkAsRead = () => {
-        
+    const handleMarkAsRead = (id) => {
+        addToStoreReadList(id);
     }
 
     // console.log(book);
@@ -57,7 +58,7 @@ const BookDetails = () => {
                 </div>
                 
                 <div className="justify-start gap-6 pt-6 card-actions ">
-                    <button onClick={handleMarkAsRead} className="btn btn-outline">Mark as Read</button>
+                    <button onClick={() => handleMarkAsRead(bookId)} className="btn btn-outline">Mark as Read</button>
                     <button onClick={handleAddToWishlist} className="btn btn-outline">Add to Wishlist</button>
                 </div>
             </div>
