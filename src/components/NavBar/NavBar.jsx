@@ -5,8 +5,8 @@ const NavBar = () => {
 
     const links = <>
         <li><NavLink to="/">Home</NavLink></li>
-        {/* <li><NavLink>Listed Book</NavLink></li>
-        <li><NavLink>ages To Read</NavLink></li> */}
+        <li><NavLink to="/listed-books">Listed Book</NavLink></li>
+        {/* <li><NavLink>ages To Read</NavLink></li> */}
     </>
     
     return (
