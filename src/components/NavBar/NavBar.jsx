@@ -29,9 +29,9 @@ const NavBar = () => {
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="flex justify-end gap-4 navbar-end">
                 <a className="btn">Sign Up</a>
-                <a className="btn">LoogIn</a>
+                <a className="btn">LogIn</a>
             </div>
         </div>
     );
